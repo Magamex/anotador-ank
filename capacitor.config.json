@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "anotador-ank",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

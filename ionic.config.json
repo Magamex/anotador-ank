@@ -1,0 +1,7 @@
+{
+  "name": "anotador-ank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
