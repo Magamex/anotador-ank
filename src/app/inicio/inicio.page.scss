@@ -1,0 +1,27 @@
+ion-modal.stack-modal {
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --backdrop-opacity: var(--ion-backdrop-opacity, 0.32);
+}
+
+cdk-virtual-scroll-viewport {
+  height: 60%;
+  width: 100%;
+}
+
+.no-scroll {
+    --overflow: hidden;
+}
+
+.odd {
+  --ion-item-background: #e2e2e2;
+}
+
+.focus {
+  --ion-item-background: var(--ion-color-primary);
+  --ion-item-color: #fff;
+}
+
+.div_monto {
+  height: 35%;
+  width: 100%;
+}

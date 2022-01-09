@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Agregar Reintegro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Fecha</ion-label>
+    <ion-input type="date"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Monto</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col class="ion-align-self-center">
+      <ion-button expand="full" (click)="close()">Cancelar</ion-button>
+    </ion-col>
+    <ion-col class="ion-align-self-center">
+      <ion-button expand="full">Aceptar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

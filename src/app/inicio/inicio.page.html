@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Anotador ANK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="no-scroll" [fullscreen]="true">
+
+  <div class="div_monto ion-text-center">
+    <p>Beneficio Actual</p>
+    <p>$0</p>
+    <p>No tiene reintegros disponibles</p>
+  </div>
+
+  <cdk-virtual-scroll-viewport itemSize="56" minBufferPx="900" maxBufferPx="1350">
+    <ion-list>
+      <ion-item *cdkVirtualFor="let item of items; let isOdd = odd; let i = index;"
+      tappable (click)="selectItem(item)"
+      [class.odd]="isOdd" [class.focus]="scrollTo == i">
+        <ion-avatar slot="start">
+          <img src="https://loremflickr.com/100/100" />
+        </ion-avatar>
+        <ion-label>
+          {{ item }}
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
+
+  </cdk-virtual-scroll-viewport>
+
+
+</ion-content>
+
+  <!-- <ion-tabs> -->
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button (click)="initModal()">
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <ion-label>Agregar</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  <!-- </ion-tabs> -->
+

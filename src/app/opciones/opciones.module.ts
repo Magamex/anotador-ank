@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FolderPageRoutingModule } from './folder-routing.module';
+import { OpcionesPageRoutingModule } from './opciones-routing.module';
 
-import { FolderPage } from './folder.page';
+import { OpcionesPage } from './opciones.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FolderPageRoutingModule
+    OpcionesPageRoutingModule
   ],
-  declarations: [FolderPage]
+  declarations: [OpcionesPage]
 })
-export class FolderPageModule {}
+export class OpcionesPageModule {}
