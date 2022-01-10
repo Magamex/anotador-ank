@@ -1,0 +1,3 @@
+# anotador-ank
+
+Pendiente 
