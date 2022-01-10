@@ -32,15 +32,15 @@ export class InicioPage implements OnInit {
     if (this.scrollTo > -1) {
         this.viewPort.scrollToIndex(this.scrollTo, 'smooth');
     }
-}
+  }
 
-async selectItem(item) {
-    const toast = await this.toastCtrl.create({
-        message: item,
-        duration: 2000
-    });
-    toast.present();
-}
+  async selectItem(item) {
+      const toast = await this.toastCtrl.create({
+          message: item,
+          duration: 2000
+      });
+      toast.present();
+  }
 
   async initModal() {
     const modal = await this.modalController.create({
